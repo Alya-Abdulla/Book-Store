@@ -5,6 +5,7 @@ import Slider from './component/header/slider/Slider';
 import Cards from './component/Cards/Cards'
 import React, {useState} from 'react'
 import request from 'superagent'
+import Services from './component/Services/Services'
 
 function App() {
 
@@ -33,7 +34,7 @@ function App() {
     <div>
       <Header handelsearch={handelsearch} searchbook={searchbook}  />
       <Slider />
-      {/* <Books /> */}
+      <Services />
       <Cards books={books} />
       
       
