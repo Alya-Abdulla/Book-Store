@@ -1,0 +1,62 @@
+.navbar{
+    background-color: var(--main-color);
+    box-shadow: 0 0 1px 1px gray;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-links{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-link{
+padding: 0 20px;
+font-size: 20px;
+font-weight: 600 ;
+color:rgb(16, 16, 16);
+cursor: pointer;
+height: 100%;
+display: flex;
+align-items: center;
+
+}
+
+/* change link color */
+.navbar-link:hover{
+    background-color: snow;
+}
+
+@media (max-width:412px){
+    .navbar{
+        position: fixed;
+        top: 50px;
+        left:-300px;
+        width: 300px;
+        height: 100vh;
+        align-items: flex-start;
+        z-index:999;
+        transition: 1 all ls ease ;
+
+    }
+    .navbar-links{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: max-content;
+        width: 100%;
+    }
+    .navbar-link{
+        width: 100%;
+        padding: 40px;
+    }
+
+
+}
+
+
+
+
