@@ -66,7 +66,7 @@ const Header = (props) => {
               type="search"
               placeholder="Search in book store ..."
             />
-            <i className="bi bi-search" onClick={props.searchbook()}></i>
+            <i className="bi bi-search" onClick={props.searchbook}></i>
           </form>
         </div>
 
