@@ -2,6 +2,7 @@ import './Cards.css'
 import React from "react";
 import {useState} from 'react'
 import Modal from '../modal/Modal';
+import Cart from '../../pages/cart/Cart';
 
 const Card = (props) =>{
 
@@ -17,6 +18,9 @@ const Card = (props) =>{
     const [bookItem,setItem]=useState();
     console.log(props.id)
 
+    
+
+
     return(
         <div className="container">
             {props.books ? props.books.map((b, i) => (
@@ -26,8 +30,10 @@ const Card = (props) =>{
             <div className="bottom"></div>
             <h3 className="title">{ b.volumeInfo.title }</h3>
            {numbers.length ? <p className="amount">&#8377;{numbers[i]}</p> : null } 
+           
            <i onClick={()=>{setShow(true);setItem(b)}}
             className="bi bi-eye-fill"></i>
+             <i className="bi bi-cart-plus"></i>
         </div>
                     
                     {/* <p>{ b.volumeInfo.title }</p> */}
@@ -35,7 +41,7 @@ const Card = (props) =>{
             )) : null}
 
     
-        <Modal show={show} item={bookItem} onClose={()=>setShow(false)}/>
+        <Modal show={show} item={bookItem} setCart={props.setCart} cart={props.cart} onClose={()=>setShow(false)}/>
         </div>
     )
 }

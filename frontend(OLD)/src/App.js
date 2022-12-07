@@ -20,7 +20,7 @@ function App() {
     .query({ q: state.searchFeild })
     .then((data) =>{
         debugger
-        console.log(data.body);
+        console.log('api data', data.body);
         setBooks([...data.body.items])
       })}
 

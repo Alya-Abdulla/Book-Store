@@ -85,8 +85,8 @@ justify-content: center;
     }
     
 .third-slide {
-        background: rgb(13, 58, 180);
-        background: linear-gradient(90deg, rgba(13, 58, 180, 1) 0%, rgba(100, 29, 29, 1) 80%, rgba(252, 176, 69, 1) 100%);
+        background: rgb(92, 101, 148);
+        background: linear-gradient(90deg, rgb(74, 93, 144) 0%, rgba(100, 29, 29, 1) 80%, rgba(252, 176, 69, 1) 100%);
     }
     
 

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Header.css";
-import Navbar from "./Navbar";
+import Navbar from "./Nanbar/Navbar";
 import request from 'superagent'
 import { Link } from 'react-router-dom'
 // import SeaechArea from "./SearchArea"
@@ -44,20 +44,17 @@ const Header = (props) => {
         </div>
 
         <div className="header-top-text">Welcome To Online Book Store</div>
-
-        <div className="header-top-link">
-          {/* booststrap */}
-          <i className="bi bi-person-fill"></i>
-          {/* <Link to="/signin">Signin</Link> */}
-        </div>
+        <Link to="/login" className="header-top-link">
+        <i className="bi bi-person-fill"></i> Login
+      </Link>
       </div>
 
       <div className="header-middle">
-        <div className="header-middle-logo">
-          <i className="bi bi-book"></i>
+        <Link to="/home" className="header-middle-logo">
           <b>Book</b>
+          <i className="bi bi-book"></i>
           <b>Store</b>
-        </div>
+        </Link>
 
         <div className="header-middle-search-box">
           <form action="">
@@ -71,9 +68,9 @@ const Header = (props) => {
           </form>
         </div>
 
-        <div className="header-middle-cart-wrapper">
+        <Link to="/cart" className="header-middle-cart-wrapper">
           <i className="bi bi-cart3"></i>
-        </div>
+        </Link>
       </div>
       <Navbar />
     </header>

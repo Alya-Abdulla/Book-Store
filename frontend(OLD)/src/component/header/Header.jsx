@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./Header.css";
 import Navbar from "./Navbar";
 import request from 'superagent'
+import { Link } from 'react-router-dom'
 // import SeaechArea from "./SearchArea"
 
 // const [toggle, setToggle] = useState(false);
@@ -47,7 +48,7 @@ const Header = (props) => {
         <div className="header-top-link">
           {/* booststrap */}
           <i className="bi bi-person-fill"></i>
-          login
+          {/* <Link to="/signin">Signin</Link> */}
         </div>
       </div>
 
@@ -66,7 +67,7 @@ const Header = (props) => {
               type="search"
               placeholder="Search in book store ..."
             />
-            <i className="bi bi-search" onClick={props.searchbook}></i>
+            <i className="bi bi-search" onClick={props.searchbook}>Search</i>
           </form>
         </div>
 
