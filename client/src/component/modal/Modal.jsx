@@ -1,10 +1,11 @@
 import './Modal.css'
 import react from 'react';
 import { Link } from "react-router-dom";
-
+import {useState} from 'react'
 
 
 const Modal=({show,item,onClose, setCart, cart})=>{
+    
     if(!show)
     {
         return null;
@@ -30,9 +31,10 @@ const Modal=({show,item,onClose, setCart, cart})=>{
                         </div>
                     </div>
                     <h4 className="description">{item.volumeInfo.description}</h4>
+             
                 <div className="modal-content-info-price">
-            <b>Price: </b>${item.numbers}
-          </div>
+            <b>Price: </b>$ {} 
+          </div> 
           <div className="modal-add-to-cart">
             <input
               className="modal-add-to-cart-input"

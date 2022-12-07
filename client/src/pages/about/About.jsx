@@ -1,14 +1,15 @@
-import React from "react";
-  
-const About = () => {
+import React from 'react'
+import './About.css'
+function About() {
   return (
-    <div>
-      <h1>
-        GeeksforGeeks is a Computer 
-        Science portal for geeks.
-      </h1>
-    </div>
-  );
-};
-  
-export default About;
+    
+    <section className="about">
+    <h1>About Us</h1>
+    <p>We are an online book store</p>
+    <p>
+      <strong>Version: 1.0.0</strong>
+    </p>
+  </section>  )
+}
+
+export default About

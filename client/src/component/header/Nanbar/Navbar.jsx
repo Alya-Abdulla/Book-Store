@@ -7,13 +7,13 @@ const Navbar = ({ toggle, setToggle }) => {
         <Link to="/home" onClick={() => setToggle(false)} className="navbar-link">
           Home
         </Link>
-        <Link
+        {/* <Link
           to="/authors"
           onClick={() => setToggle(false)}
           className="navbar-link"
         >
           Authors
-        </Link>
+        </Link> */}
         <Link
           to="/about"
           onClick={() => setToggle(false)}

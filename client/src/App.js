@@ -31,7 +31,11 @@ function App() {
     .then((data) =>{
         debugger
         console.log(data.body);
-        setBooks([...data.body.items])
+        // if (data != undefined){
+          setBooks([...data.body.items])
+        // } else {
+        //   console.log('search again!')
+        // }
       })}
 
   const handelsearch = (e) => {
